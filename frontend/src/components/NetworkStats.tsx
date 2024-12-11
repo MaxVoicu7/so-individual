@@ -46,7 +46,7 @@ const NetworkStats = () => {
     };
 
     fetchNetworkStats();
-    const interval = setInterval(fetchNetworkStats, 1000); // Update every second
+    const interval = setInterval(fetchNetworkStats, 1000);
     return () => clearInterval(interval);
   }, []);
 
@@ -59,7 +59,6 @@ const NetworkStats = () => {
         <h2 className="glow-text">Network Activity</h2>
       </div>
       <div className="cores-grid">
-        {/* Current Speeds */}
         <div className="core-box">
           <div className="mb-2">
             <span className="core-name">Current Speeds</span>
@@ -78,7 +77,6 @@ const NetworkStats = () => {
           </div>
         </div>
 
-        {/* Total Transfer */}
         <div className="core-box">
           <div className="mb-2">
             <span className="core-name">Total Transfer</span>
@@ -97,7 +95,6 @@ const NetworkStats = () => {
           </div>
         </div>
 
-        {/* Packets */}
         <div className="core-box">
           <div className="mb-2">
             <span className="core-name">Packets</span>

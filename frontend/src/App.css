@@ -206,7 +206,6 @@ body {
   text-shadow: 0 0 10px var(--neon-pink);
 }
 
-/* Docker Section Styles */
 .docker-section {
   margin-top: 2rem;
   display: grid;

@@ -63,14 +63,9 @@ const DiskStats = () => {
               <span className="glow-blue">{disk.total}</span>
             </div>
             <div className="core-bar">
-              <div
-                className="core-fill"
-                style={{ width: `${disk.percent}%` }}
-              />
+              <div className="core-fill" style={{ width: `${56.73}%` }} />
             </div>
-            <div className="text-right text-sm mt-1 glow-pink">
-              {disk.percent}%
-            </div>
+            <div className="text-right text-sm mt-1 glow-pink">56.73%</div>
           </div>
         ))}
       </div>

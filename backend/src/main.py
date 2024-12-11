@@ -8,7 +8,6 @@ from system.battery_info import get_battery_stats
 from system.network_connections import get_network_connections
 import logging
 
-# Configure logging
 logging.basicConfig(level=logging.INFO)
 
 app = Flask(__name__)

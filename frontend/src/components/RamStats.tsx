@@ -55,7 +55,6 @@ const RamStats = () => {
         <h2 className="glow-text">Memory Distribution</h2>
       </div>
       <div className="cores-grid">
-        {/* Column 1 */}
         {ramStats.column1.map((item, index) => (
           <div key={index} className="core-box">
             <div className="core-info">
@@ -65,7 +64,6 @@ const RamStats = () => {
           </div>
         ))}
 
-        {/* Column 2 */}
         {ramStats.column2.map((item, index) => (
           <div key={index} className="core-box">
             <div className="core-info">
@@ -75,7 +73,6 @@ const RamStats = () => {
           </div>
         ))}
 
-        {/* Column 3 */}
         {ramStats.column3.map((item, index) => (
           <div key={index} className="core-box">
             <div className="core-info">

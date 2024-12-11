@@ -70,10 +70,6 @@ const NetworkConnections = () => {
               <span className="core-name">Remote</span>
               <span className="glow-pink">{conn.remote_address}</span>
             </div>
-            <div className="core-info">
-              <span className="core-name">Status</span>
-              <span className="glow-blue">{conn.status}</span>
-            </div>
           </div>
         ))}
       </div>

@@ -39,7 +39,6 @@ const BatteryStats = () => {
   if (error) return <div className="text-red-500">Error: {error}</div>;
   if (!batteryStats) return <div>Loading...</div>;
 
-  // Don't render anything if there's no battery (desktop computer)
   if (batteryStats === null) return null;
 
   return (
@@ -48,7 +47,6 @@ const BatteryStats = () => {
         <h2 className="glow-text">Battery Status</h2>
       </div>
       <div className="cores-grid">
-        {/* Battery Percentage */}
         <div className="core-box">
           <div className="core-info mb-4">
             <span className="core-name">Battery Level</span>
@@ -68,7 +66,6 @@ const BatteryStats = () => {
           </div>
         </div>
 
-        {/* Power Status */}
         <div className="core-box">
           <div className="core-info">
             <span className="core-name">Status</span>
@@ -79,18 +76,6 @@ const BatteryStats = () => {
             </span>
           </div>
         </div>
-
-        {/* Time Remaining */}
-        {!batteryStats.power_plugged && (
-          <div className="core-box">
-            <div className="core-info">
-              <span className="core-name">Time Remaining</span>
-              <span className="glow-blue">
-                {batteryStats.time_left} minutes
-              </span>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );

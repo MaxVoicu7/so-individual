@@ -117,18 +117,18 @@ function App() {
             <div className="battery-column mt-4">
               <BatteryStats />
             </div>
+
+            <div className="network-column">
+              <NetworkStats />
+            </div>
           </div>
 
-          <div className="network-column">
-            <NetworkStats />
-          </div>
-        </div>
-
-        <div className="dashboard-grid mt-4">
           <div className="network-connections-column">
             <NetworkConnections />
           </div>
         </div>
+
+        <div className="dashboard-grid mt-4"></div>
       </div>
     </div>
   );
